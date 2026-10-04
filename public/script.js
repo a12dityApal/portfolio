@@ -44,7 +44,7 @@ $('#contact-form').addEventListener('submit', async (e) => {
   const status = $('#form-status');
   const btn = form.querySelector('button');
   status.className = 'status';
-  status.textContent = 'Sending…';
+  status.textContent = 'Sending...';
   btn.disabled = true;
   try {
     const res = await fetch('/api/contact', {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aditya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Aditya</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-kicker">BCA student in Kanpur, graduating next year</p>
+      <h1>I design interfaces and build the software behind them.</h1>
+      <div class="dimension" aria-hidden="true">
+        <span></span><em>UI/UX</em><span></span><em>AI/ML</em><span></span><em>Web development</em><span></span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Send a message</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>I'm in the third year of my BCA at Vision College of Management, Kanpur. I like work that sits between how something looks and how it runs: a clear layout on the front, clean logic behind it.</p>
+        <p>Next I'm aiming for an MCA, with JNU as my first choice, and a career that mixes design, AI and software development.</p>
+      </div>
+      <ul class="skills" id="skills" aria-label="Skills"></ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="project-list" class="projects" aria-live="polite">
+        <p class="status">Loading projects…</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <p>Have a project, internship or question? Send a message and I'll reply by email.</p>
+        <form id="contact-form" novalidate>
+          <label>Your name <input name="name" type="text" autocomplete="name" required /></label>
+          <label>Your email <input name="email" type="email" autocomplete="email" required /></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p id="form-status" class="status" role="status"></p>
+        </form>
+      </div>
+      <div id="links" class="links"></div>
+    </section>
+  </main>
+
+  <footer class="footer"><p id="year-line"></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
